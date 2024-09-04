@@ -1,4 +1,4 @@
-module github.com/juanfont/headscale
+module github.com/tpuljak/headscale
 
 go 1.23.0
 
