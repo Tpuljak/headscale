@@ -17,7 +17,7 @@ require (
 	github.com/jagottsicher/termcolor v1.0.2
 	github.com/klauspost/compress v1.17.9
 	github.com/oauth2-proxy/mockoidc v0.0.0-20240214162133-caebfff84d25
-	github.com/ory/dockertest/v3 v3.11.0
+	github.com/ory/dockertest/v3 v3.10.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/philip-bui/grpc-zerolog v1.0.1
 	github.com/pkg/profile v1.7.0
@@ -88,7 +88,7 @@ require (
 	github.com/digitalocean/go-smbios v0.0.0-20180907143718-390a4f403a8e // indirect
 	github.com/docker/cli v27.2.0+incompatible // indirect
 	github.com/docker/docker v27.2.0+incompatible // indirect
-	github.com/docker/go-connections v0.5.0 // indirect
+	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/felixge/fgprof v0.9.5 // indirect

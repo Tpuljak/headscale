@@ -642,7 +642,7 @@ func TestFailoverNodeRoutesIfNeccessary(t *testing.T) {
 				}
 			}
 
-			for step := range len(tt.isConnected) {
+			for step := 0; step < len(tt.isConnected); step++ {
 				node := tt.nodes[step]
 				isConnected := tt.isConnected[step]
 				want := tt.want[step]

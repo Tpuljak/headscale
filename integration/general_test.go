@@ -916,7 +916,7 @@ func TestPingAllByIPManyUpDown(t *testing.T) {
 
 	wg, _ := errgroup.WithContext(context.Background())
 
-	for run := range 3 {
+	for run := 0; run < 5; run++ {
 		t.Logf("Starting DownUpPing run %d", run+1)
 
 		for _, client := range allClients {
