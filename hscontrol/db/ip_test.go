@@ -10,8 +10,8 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
+	"github.com/tpuljak/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/util"
 )
 
 var mpp = func(pref string) *netip.Prefix {

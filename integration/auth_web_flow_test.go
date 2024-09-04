@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/juanfont/headscale/integration/hsic"
 	"github.com/samber/lo"
+	"github.com/tpuljak/headscale/integration/hsic"
 )
 
 var errParseAuthPage = errors.New("failed to parse auth page")

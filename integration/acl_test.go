@@ -8,10 +8,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
 	"github.com/stretchr/testify/assert"
+	"github.com/tpuljak/headscale/hscontrol/policy"
+	"github.com/tpuljak/headscale/integration/hsic"
+	"github.com/tpuljak/headscale/integration/tsic"
 )
 
 var veryLargeDestination = []string{
@@ -300,7 +300,7 @@ func TestACLHostsInNetMapTable(t *testing.T) {
 // This should make the node appear in the peer list, but
 // disallow ping.
 // This ACL will not allow user1 access its own machines.
-// Reported: https://github.com/juanfont/headscale/issues/699
+// Reported: https://github.com/tpuljak/headscale/issues/699
 func TestACLAllowUser80Dst(t *testing.T) {
 	IntegrationSkip(t)
 
@@ -401,7 +401,7 @@ func TestACLDenyAllPort80(t *testing.T) {
 
 // Test to confirm that we can use user:* from one user.
 // This ACL will not allow user1 access its own machines.
-// Reported: https://github.com/juanfont/headscale/issues/699
+// Reported: https://github.com/tpuljak/headscale/issues/699
 func TestACLAllowUserDst(t *testing.T) {
 	IntegrationSkip(t)
 
@@ -457,7 +457,7 @@ func TestACLAllowUserDst(t *testing.T) {
 }
 
 // Test to confirm that we can use *:* from one user
-// Reported: https://github.com/juanfont/headscale/issues/699
+// Reported: https://github.com/tpuljak/headscale/issues/699
 func TestACLAllowStarDst(t *testing.T) {
 	IntegrationSkip(t)
 
@@ -575,7 +575,7 @@ func TestACLNamedHostsCanReachBySubnet(t *testing.T) {
 
 // This test aims to cover cases where individual hosts are allowed and denied
 // access based on their assigned hostname
-// https://github.com/juanfont/headscale/issues/941
+// https://github.com/tpuljak/headscale/issues/941
 //
 //	ACL = [{
 //			"DstPorts": [{
@@ -609,9 +609,9 @@ func TestACLNamedHostsCanReachBySubnet(t *testing.T) {
 //		}
 //	}
 //
-// https://github.com/juanfont/headscale/issues/941
+// https://github.com/tpuljak/headscale/issues/941
 // Additionally verify ipv6 behaviour, part of
-// https://github.com/juanfont/headscale/issues/809
+// https://github.com/tpuljak/headscale/issues/809
 func TestACLNamedHostsCanReach(t *testing.T) {
 	IntegrationSkip(t)
 

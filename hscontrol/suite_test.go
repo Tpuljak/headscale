@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/juanfont/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/types"
 	"gopkg.in/check.v1"
 )
 

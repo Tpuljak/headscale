@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/puzpuzpuz/xsync/v3"
 	"github.com/rs/zerolog/log"
 	"github.com/sasha-s/go-deadlock"
+	"github.com/tpuljak/headscale/hscontrol/types"
 	"tailscale.com/envknob"
 	"tailscale.com/tailcfg"
 	"tailscale.com/util/set"

@@ -6,10 +6,10 @@ import (
 	"net/netip"
 	"strconv"
 
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
+	v1 "github.com/tpuljak/headscale/gen/go/headscale/v1"
+	"github.com/tpuljak/headscale/hscontrol/types"
 	"google.golang.org/grpc/status"
 )
 

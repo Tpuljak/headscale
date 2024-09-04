@@ -4,8 +4,8 @@ import (
 	"net/netip"
 	"net/url"
 
-	"github.com/juanfont/headscale/integration/dockertestutil"
-	"github.com/juanfont/headscale/integration/tsic"
+	"github.com/tpuljak/headscale/integration/dockertestutil"
+	"github.com/tpuljak/headscale/integration/tsic"
 	"tailscale.com/ipn/ipnstate"
 	"tailscale.com/net/netcheck"
 	"tailscale.com/types/netmap"

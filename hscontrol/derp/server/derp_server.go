@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/rs/zerolog/log"
+	"github.com/tpuljak/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/util"
 	"tailscale.com/derp"
 	"tailscale.com/net/stun"
 	"tailscale.com/tailcfg"

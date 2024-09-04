@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/juanfont/headscale/integration/dockertestutil"
+	"github.com/tpuljak/headscale/integration/dockertestutil"
 )
 
 // This file is intended to "test the test framework", by proxy it will also test

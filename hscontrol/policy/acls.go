@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/rs/zerolog/log"
 	"github.com/tailscale/hujson"
+	"github.com/tpuljak/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/util"
 	"go4.org/netipx"
 	"tailscale.com/tailcfg"
 )

@@ -28,7 +28,7 @@ const (
 	// See also https://github.com/tailscale/tailscale/blob/main/tailcfg/tailcfg.go
 	NoiseCapabilityVersion = 39
 
-	// TODO(juan): remove this once https://github.com/juanfont/headscale/issues/727 is fixed.
+	// TODO(juan): remove this once https://github.com/tpuljak/headscale/issues/727 is fixed.
 	registrationHoldoff        = time.Second * 5
 	reservedResponseHeaderSize = 4
 )

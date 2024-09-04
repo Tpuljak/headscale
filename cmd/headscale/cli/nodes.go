@@ -10,10 +10,10 @@ import (
 	"time"
 
 	survey "github.com/AlecAivazis/survey/v2"
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
+	v1 "github.com/tpuljak/headscale/gen/go/headscale/v1"
+	"github.com/tpuljak/headscale/hscontrol/util"
 	"google.golang.org/grpc/status"
 	"tailscale.com/types/key"
 )

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
+	"github.com/tpuljak/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/util"
 	"golang.org/x/crypto/bcrypt"
 )
 

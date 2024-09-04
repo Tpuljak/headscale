@@ -14,14 +14,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
-	"github.com/juanfont/headscale/integration/dockertestutil"
-	"github.com/juanfont/headscale/integration/hsic"
 	"github.com/ory/dockertest/v3"
 	"github.com/ory/dockertest/v3/docker"
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
+	"github.com/tpuljak/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/util"
+	"github.com/tpuljak/headscale/integration/dockertestutil"
+	"github.com/tpuljak/headscale/integration/hsic"
 )
 
 const (

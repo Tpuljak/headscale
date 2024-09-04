@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/util"
-	"github.com/juanfont/headscale/integration/tsic"
 	"github.com/stretchr/testify/assert"
+	"github.com/tpuljak/headscale/hscontrol/util"
+	"github.com/tpuljak/headscale/integration/tsic"
 )
 
 const (

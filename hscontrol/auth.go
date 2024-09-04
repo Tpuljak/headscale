@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/db"
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/rs/zerolog/log"
+	"github.com/tpuljak/headscale/hscontrol/db"
+	"github.com/tpuljak/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/util"
 	"gorm.io/gorm"
 	"tailscale.com/tailcfg"
 	"tailscale.com/types/key"
@@ -150,7 +150,7 @@ func (h *Headscale) handleRegister(
 	// - The node is logged out (or expired) and pending to be authorized. TODO(juan): We need to keep alive the connection here
 	if node != nil {
 		// (juan): For a while we had a bug where we were not storing the MachineKey for the nodes using the TS2021,
-		// due to a misunderstanding of the protocol https://github.com/juanfont/headscale/issues/1054
+		// due to a misunderstanding of the protocol https://github.com/tpuljak/headscale/issues/1054
 		// So if we have a not valid MachineKey (but we were able to fetch the node with the NodeKeys), we update it.
 		if err != nil || node.MachineKey.IsZero() {
 			if err := h.db.NodeSetMachineKey(node, machineKey); err != nil {

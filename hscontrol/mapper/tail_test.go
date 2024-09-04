@@ -8,8 +8,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
+	"github.com/tpuljak/headscale/hscontrol/policy"
+	"github.com/tpuljak/headscale/hscontrol/types"
 	"tailscale.com/tailcfg"
 	"tailscale.com/types/key"
 )

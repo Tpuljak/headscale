@@ -6,10 +6,10 @@ import (
 	"net/netip"
 	"sort"
 
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/puzpuzpuz/xsync/v3"
 	"github.com/rs/zerolog/log"
+	"github.com/tpuljak/headscale/hscontrol/policy"
+	"github.com/tpuljak/headscale/hscontrol/types"
 	"gorm.io/gorm"
 	"tailscale.com/util/set"
 )
@@ -112,7 +112,7 @@ func EnableRoute(tx *gorm.DB, id uint64) (*types.StateUpdate, error) {
 
 	// Tailscale requires both IPv4 and IPv6 exit routes to
 	// be enabled at the same time, as per
-	// https://github.com/juanfont/headscale/issues/804#issuecomment-1399314002
+	// https://github.com/tpuljak/headscale/issues/804#issuecomment-1399314002
 	if route.IsExitRoute() {
 		return enableRoutes(
 			tx,
@@ -139,7 +139,7 @@ func DisableRoute(tx *gorm.DB,
 
 	// Tailscale requires both IPv4 and IPv6 exit routes to
 	// be enabled at the same time, as per
-	// https://github.com/juanfont/headscale/issues/804#issuecomment-1399314002
+	// https://github.com/tpuljak/headscale/issues/804#issuecomment-1399314002
 	var update []types.NodeID
 	if !route.IsExitRoute() {
 		route.Enabled = false
@@ -205,7 +205,7 @@ func DeleteRoute(
 
 	// Tailscale requires both IPv4 and IPv6 exit routes to
 	// be enabled at the same time, as per
-	// https://github.com/juanfont/headscale/issues/804#issuecomment-1399314002
+	// https://github.com/tpuljak/headscale/issues/804#issuecomment-1399314002
 	var update []types.NodeID
 	if !route.IsExitRoute() {
 		update, err = failoverRouteTx(tx, isLikelyConnected, route)

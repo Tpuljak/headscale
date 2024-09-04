@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
 	"github.com/stretchr/testify/assert"
+	v1 "github.com/tpuljak/headscale/gen/go/headscale/v1"
+	"github.com/tpuljak/headscale/hscontrol/policy"
+	"github.com/tpuljak/headscale/integration/hsic"
+	"github.com/tpuljak/headscale/integration/tsic"
 )
 
 func executeAndUnmarshal[T any](headscale ControlServer, command []string, result T) error {

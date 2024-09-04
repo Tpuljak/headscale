@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
 	"github.com/stretchr/testify/assert"
+	"github.com/tpuljak/headscale/integration/hsic"
+	"github.com/tpuljak/headscale/integration/tsic"
 )
 
 func TestResolveMagicDNS(t *testing.T) {

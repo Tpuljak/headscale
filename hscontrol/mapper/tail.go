@@ -5,9 +5,9 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/samber/lo"
+	"github.com/tpuljak/headscale/hscontrol/policy"
+	"github.com/tpuljak/headscale/hscontrol/types"
 	"tailscale.com/tailcfg"
 )
 

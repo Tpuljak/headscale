@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
 	"github.com/stretchr/testify/assert"
+	"github.com/tpuljak/headscale/hscontrol/policy"
+	"github.com/tpuljak/headscale/integration/hsic"
+	"github.com/tpuljak/headscale/integration/tsic"
 )
 
 var retry = func(times int, sleepInterval time.Duration,

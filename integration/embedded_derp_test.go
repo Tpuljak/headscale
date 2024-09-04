@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/util"
-	"github.com/juanfont/headscale/integration/dockertestutil"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
 	"github.com/ory/dockertest/v3"
+	"github.com/tpuljak/headscale/hscontrol/util"
+	"github.com/tpuljak/headscale/integration/dockertestutil"
+	"github.com/tpuljak/headscale/integration/hsic"
+	"github.com/tpuljak/headscale/integration/tsic"
 )
 
 type EmbeddedDERPServerScenario struct {

@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/juanfont/headscale/hscontrol/util"
+	"github.com/tpuljak/headscale/hscontrol/util"
 )
 
 func TestPrefixMap(t *testing.T) {

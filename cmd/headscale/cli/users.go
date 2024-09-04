@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	survey "github.com/AlecAivazis/survey/v2"
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
 	"github.com/pterm/pterm"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
+	v1 "github.com/tpuljak/headscale/gen/go/headscale/v1"
 	"google.golang.org/grpc/status"
 )
 

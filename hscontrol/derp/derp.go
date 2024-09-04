@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/rs/zerolog/log"
+	"github.com/tpuljak/headscale/hscontrol/types"
 	"gopkg.in/yaml.v3"
 	"tailscale.com/tailcfg"
 )
